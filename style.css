@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('pexels-arnie-chou-1229042.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    color: #fff;
+    opacity: 5;
+    border-radius: 20px;
+
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__title {
+    margin-top: 20px;
+}
+
+
+.form__username,
+.form__password {
+    margin: 30px 0;
+    border: solid 1px #fff;
+    padding: 10px;
+    width: 300px;
+    border-radius: 40px;
+    position: relative;
+}
+
+#username,
+#password {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border: none;
+    color: #fff;
+}
+
+
+.form__rememberMe {
+    display: flex;
+    justify-content: space-between;
+}
+
+#username::placeholder,
+#password::placeholder 
+{
+    color: #fff;
+}
+
+.form__username i,
+.form__password i {
+    position: absolute;
+    right: 20px;
+}
+
+
+#forgot {
+    margin-left: 50px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.form__loginBtn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 300px;
+    border-radius: 40px;
+    
+}
+
+.form__register {
+    margin-bottom: 20px;
+    
+}
+
+#Register {
+    text-decoration: none;
+    color: #fff;
+}
