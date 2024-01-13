@@ -52,12 +52,12 @@
             form: '#form-1',
             errorSelector: ".formMsg",
             rules: [
-                Validator.isRequired('#username'),
-                Validator.isEmail('#email'),
-                Validator.isRequired("#password"),
+                Validator.isRequired('#username', "Vui lòng nhập trường này"),
+                Validator.isEmail('#email', "Nhập email"),
+                Validator.isRequired("#password", "Vui lòng nhập trường này"),
                 Validator.isConfirmed("#confirm__password", () => {
                     return document.querySelector("#form-1 #password").value;
-                })
+                }, "Nhap dung gia tri")
             ]
         });
     </script>
